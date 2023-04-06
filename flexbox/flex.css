@@ -1,0 +1,68 @@
+.fullBody{
+    display:flex;
+    background-image: url(../images/back.png);
+    }
+
+#board {
+    position: relative;
+    top: 10%;
+    margin: 10px;
+    width: 35vw;
+    height: 32vw;
+    min-width: 300px;
+    min-height: 300px;
+    overflow: hidden;
+    border: 15px solid green;
+    padding: 15px;
+}
+
+#treasure-container {
+    z-index: 21;
+}
+
+#treasure-container, #niffler-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.niffler, .treasure {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.niffler .bg, .treasure .bg {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.niffler .bg 
+{
+    background-image: url(../images/niffler1.png);
+}
+
+.treasure .bg 
+{
+    background-image: url(../images/chest2.png);
+    background-size: 70% 70%;
+}
+
+#niffler-container
+{
+    z-index: 20;
+    border-radius: 0 0 0 10px;
+    background-image: url(../images/grass.jpg);
+}
+
+.levelNo ._form{
+    display: none;
+}
